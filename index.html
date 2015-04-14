@@ -12,7 +12,7 @@
 		<div ng-app="FlashCards">
 			<div class="flash-card" ng-controller="FlashCardController">
 				<h1>{{ flashCard.question }}</h1>
-				<ul class="flash-card-answers">
+				<ul class="flash-card-answers" ng-show="!answered">
 					<li class="flash-card-answer" ng-repeat="answer in flashCard.answers" ng-click="answerQuestion(answer)">
 						{{ answer.text }}
 					</li>
