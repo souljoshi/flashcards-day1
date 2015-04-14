@@ -9,8 +9,9 @@
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
-		<div ng-app="FlashCards">
-			<div class="flash-card" ng-controller="FlashCardController">
+		<div ng-app="FlashCards" ng-controller="MainController">
+			<div class="flash-card" ng-controller="FlashCardController" ng-repeat=
+				"flashCard in flashCards">
 				<h1>{{ flashCard.question }}</h1>
 				<ul class="flash-card-answers" ng-show="!answered">
 					<li class="flash-card-answer" ng-repeat="answer in flashCard.answers" ng-click="answerQuestion(answer)">
