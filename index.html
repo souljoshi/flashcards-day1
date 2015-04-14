@@ -18,7 +18,7 @@
 						{{ answer.text }}
 					</li>
 				</ul>
-				<h2 class="answer-feedback" ng-show="answered">
+				<h2 class="answer-feedback" ng-show="answered" ng-class="{ correct: answeredCorrectly, incorrect: !answeredCorrectly}">
 				    <span ng-show="answeredCorrectly">Yeah, you got it right!</span>
 				    <span ng-show="!answeredCorrectly">Nope, you got it wrong.</span>
 				</h2>
