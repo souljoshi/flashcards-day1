@@ -7,6 +7,8 @@ app.controller("FlashCardController", function($scope){
 			{text: "Something lame, who cares, whatever.", correct: false},
 			{text: "Some kind of fish, right?", correct: false}]
 	};
+
+	$scope.answerQuestion = function(theAnswer) {
+		console.log(theAnswer);
+	};
 });
-
-
